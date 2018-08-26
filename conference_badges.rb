@@ -15,8 +15,9 @@ def assign_rooms(list)
 end
 
 def printer(list)
-  list.each do |name|
-    puts batch_badge_creator(list[name])
-    puts assign rooms(list[name])
+  list.each_with_index do |name, i|
+    puts batch_badge_creator(list)[i]
+    puts room_assignments[i]
   end
 end
+  
