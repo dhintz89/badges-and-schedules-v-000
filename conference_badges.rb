@@ -5,3 +5,5 @@ end
 def batch_badge_creator(list)
   list.collect {|name| badge_maker(name)}
 end
+
+def assign_rooms(list)
